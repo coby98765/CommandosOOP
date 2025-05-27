@@ -16,9 +16,10 @@ namespace CommandosOOP.Models
             Console.WriteLine($"SeaCommando '{CodeName}' is Parachuting");
         }
 
-        public override void Attack()
+        public override void Attack(Enemy e)
         {
             Status = "Attack";
+            e.Attack(7);
             Console.WriteLine($"SeaCommando '{CodeName}' is Attacking.");
         }
     }

@@ -16,9 +16,10 @@ namespace CommandosOOP.Models
             Console.WriteLine($"AirCommando '{CodeName}' is Parachuting");
         }
 
-        public override void Attack()
+        public override void Attack(Enemy e)
         {
             Status = "Attack";
+            e.Attack(10);
             Console.WriteLine($"AirCommando '{CodeName}' is Attacking.");
         }
     }

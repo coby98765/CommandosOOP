@@ -26,9 +26,10 @@
             Console.WriteLine($"Commando '{CodeName}' is Hiding.");
         }
 
-        public virtual void Attack()
+        public virtual void Attack(Enemy e)
         {
             Status = "Attack";
+            e.Attack(5);
             Console.WriteLine($"Commando '{CodeName}' is Attacking.");
         }
 
