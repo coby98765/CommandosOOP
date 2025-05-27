@@ -25,6 +25,7 @@ namespace CommandosOOP.Models
         {
             if((Lives - lives) <= 0)
             {
+                Kill();
                 return 0;
             }
             else
