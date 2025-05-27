@@ -13,13 +13,13 @@ namespace CommandosOOP.Models
 
         public void Parachute()
         {
-            Console.WriteLine($"SeaCommando '{Name}' is Parachuting");
+            Console.WriteLine($"SeaCommando '{CodeName}' is Parachuting");
         }
 
         public override void Attack()
         {
             Status = "Attack";
-            Console.WriteLine($"SeaCommando '{Name}' is Attacking.");
+            Console.WriteLine($"SeaCommando '{CodeName}' is Attacking.");
         }
     }
 }
