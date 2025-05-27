@@ -11,9 +11,9 @@ namespace CommandosOOP.Models
     {
         public SeaCommando(string name, string nickname) : base(name, nickname) { }
 
-        public void Parachute()
+        public void Swim()
         {
-            Console.WriteLine($"SeaCommando: {Name}, is Parachuting");
+            Console.WriteLine($"SeaCommando: {Name}, is swimming");
         }
 
         public override void Attack()
