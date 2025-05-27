@@ -19,6 +19,9 @@ namespace CommandosOOP.Models
             Name = name;
             Manufacturer = manufacturer;
             BulletAmount = bulletAmount;
+
+            Console.WriteLine("Weapon Created.");
+
         }
 
         void Shoot()

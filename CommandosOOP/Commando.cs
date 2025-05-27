@@ -24,19 +24,19 @@ namespace CommandosOOP.Models
             Console.WriteLine("Commando Created.");
         }
 
-        void Walk()
+        public void Walk()
         {
             Status = "Walk";
             Console.WriteLine("Commando Walking.");
         }
 
-        void Hide()
+        public void Hide()
         {
             Status = "Hide";
             Console.WriteLine("Commando Hiding.");
         }
 
-        void Attack()
+        public void Attack()
         {
             Status = "Attack ";
             Console.WriteLine("Commando Attacking.");
