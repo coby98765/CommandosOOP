@@ -9,10 +9,10 @@ namespace CommandosOOP.Models
 {
     internal class Commando
     {
-        public string Name { get; set; }
-        public string Nickname { get; set; }
-        public string[] Tools = new string[5];
-        public string? Status { get; set; }
+        private string Name { get; set; }
+        private string Nickname { get; set; }
+        private string[] Tools = new string[5];
+        private string? Status { get; set; }
 
         public Commando(string name, string nickname, string[] tools) 
         {
@@ -21,25 +21,25 @@ namespace CommandosOOP.Models
             Tools = tools;
             //Status = status;
 
-            Console.WriteLine("Commando Created.");
+            Console.WriteLine($"{Name}, Commando Created.");
         }
 
         public void Walk()
         {
             Status = "Walk";
-            Console.WriteLine("Commando Walking.");
+            Console.WriteLine($"{Name} Walking.");
         }
 
         public void Hide()
         {
             Status = "Hide";
-            Console.WriteLine("Commando Hiding.");
+            Console.WriteLine($"{Name} Hiding.");
         }
 
         public void Attack()
         {
             Status = "Attack ";
-            Console.WriteLine("Commando Attacking.");
+            Console.WriteLine($"{Name} Attacking.");
         }
     }
 }

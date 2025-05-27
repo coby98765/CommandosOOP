@@ -10,9 +10,9 @@ namespace CommandosOOP.Models
 {
     internal class Weapon
     {
-        public string Name { get; set; }
-        public string Manufacturer { get; set; }
-        public int BulletAmount { get; set; }
+        private string Name { get; set; }
+        private string Manufacturer { get; set; }
+        private int BulletAmount { get; set; }
 
         public Weapon(string name,string manufacturer, int bulletAmount)
         {
@@ -20,14 +20,14 @@ namespace CommandosOOP.Models
             Manufacturer = manufacturer;
             BulletAmount = bulletAmount;
 
-            Console.WriteLine("Weapon Created.");
+            Console.WriteLine($"{Name}, Weapon Created.");
 
         }
 
         public void Shoot()
         {
             BulletAmount --;
-            Console.WriteLine("💥 Shots fired.");
+            Console.WriteLine($"{Name} fired a Shot.");
         }
     }
 }

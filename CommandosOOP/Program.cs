@@ -6,7 +6,6 @@ namespace CommandosOOP
 {
     class Program
     {
-        //public readonly string[] ToolTypes = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
         static void Main()
         {
             string[] ToolTypes = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
