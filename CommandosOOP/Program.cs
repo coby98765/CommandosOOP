@@ -1,5 +1,6 @@
 ﻿using CommandosOOP.Models;
 using System.Runtime.CompilerServices;
+using System.Xml.Linq;
 
 
 namespace CommandosOOP
@@ -8,13 +9,13 @@ namespace CommandosOOP
     {
         static void Main()
         {
-            string[] ToolTypes = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
-
             //init Commando ant test methods
-            Commando testCommando = new Commando("test","badass", ToolTypes);
+            Commando testCommando = new Commando("Command", "badass");
             testCommando.Walk();
             testCommando.Hide();
             testCommando.Attack();
+
+
 
             //init Weapon ant test methods
             Weapon testWeapon = new Weapon("Hammer", "AAA", 10);

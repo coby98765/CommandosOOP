@@ -1,45 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommandosOOP.Models;
-
-namespace CommandosOOP.Models
+﻿namespace CommandosOOP.Models
 {
     internal class Commando
     {
-        private string Name { get; set; }
-        private string Nickname { get; set; }
-        private string[] Tools = new string[5];
-        private string? Status { get; set; }
+        protected string Name { get; set; }
+        protected string CodeName { get; set; }
+        protected string[] Tools = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
+        protected string? Status { get; set; }
 
-        public Commando(string name, string nickname, string[] tools) 
+        public Commando(string name, string nickname) 
         {
             Name = name;
-            Nickname = nickname;
-            Tools = tools;
-            //Status = status;
-
-            Console.WriteLine($"{Name}, Commando Created.");
+            CodeName = nickname;
+            Console.WriteLine($"Commando: {Name} was Created.");
         }
 
         public void Walk()
         {
             Status = "Walk";
-            Console.WriteLine($"{Name} Walking.");
+            Console.WriteLine($"Commando {Name} is Walking.");
         }
 
         public void Hide()
         {
             Status = "Hide";
-            Console.WriteLine($"{Name} Hiding.");
+            Console.WriteLine($"Commando {Name} is Hiding.");
         }
 
-        public void Attack()
+        public virtual void Attack()
         {
-            Status = "Attack ";
-            Console.WriteLine($"{Name} Attacking.");
+            Status = "Attack";
+            Console.WriteLine($"Commando {Name} is Attacking.");
         }
 
         public string SayName(string commanderRank)
@@ -49,12 +39,11 @@ namespace CommandosOOP.Models
                 case "GENERAL":
                     return Name;
                 case "COLONEL":
-                    return Nickname;
+                    return CodeName;
                 default:
                     Console.WriteLine("Not Authorized to access Commando's Name");
                     return null;
             }
-
         }
     }
 }
