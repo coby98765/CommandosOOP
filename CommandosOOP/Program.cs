@@ -10,16 +10,20 @@ namespace CommandosOOP
         static void Main()
         {
             //init Commando ant test methods
-            Commando testCommando = new Commando("Command", "badass");
-            testCommando.Walk();
-            testCommando.Hide();
-            testCommando.Attack();
+            Commando SampleLandCommando = new Commando("Bruce", "Hulk");
+            AirCommando SampleAirCommando = new AirCommando("Thor", "God of Thunder");
+            SeaCommando SampleSeaCommando = new SeaCommando("Arthur", "Aquaman");
+            Commando[] ListOfCommandos = { SampleLandCommando, SampleAirCommando, SampleSeaCommando };
+            foreach(Commando c in ListOfCommandos)
+            {
+                c.Attack();
+            }
 
 
 
-            //init Weapon ant test methods
-            Weapon testWeapon = new Weapon("Hammer", "AAA", 10);
-            testWeapon.Shoot();
+            ////init Weapon ant test methods
+            //Weapon testWeapon = new Weapon("Hammer", "AAA", 10);
+            //testWeapon.Shoot();
 
         }
     }

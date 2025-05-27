@@ -19,7 +19,7 @@ namespace CommandosOOP.Models
         public override void Attack()
         {
             Status = "Attack";
-            Console.WriteLine($"SeaCommando: {Name},is Attacking.");
+            Console.WriteLine($"SeaCommando '{Name}' is Attacking.");
         }
     }
 }
