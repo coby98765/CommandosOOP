@@ -11,25 +11,26 @@
         {
             Name = name;
             CodeName = nickname;
-            Console.WriteLine($"Commando '{Name}' was Created.");
+            Console.WriteLine($"Commando '{CodeName}' was Created.");
         }
 
         public void Walk()
         {
             Status = "Walk";
-            Console.WriteLine($"Commando '{Name}' is Walking.");
+            Console.WriteLine($"Commando '{CodeName}' is Walking.");
         }
 
         public void Hide()
         {
             Status = "Hide";
-            Console.WriteLine($"Commando '{Name}' is Hiding.");
+            Console.WriteLine($"Commando '{CodeName}' is Hiding.");
         }
 
-        public virtual void Attack()
+        public virtual void Attack(Enemy e)
         {
             Status = "Attack";
-            Console.WriteLine($"Commando '{Name}' is Attacking.");
+            e.Attack(5);
+            Console.WriteLine($"Commando '{CodeName}' is Attacking.");
         }
 
         public string SayName(string commanderRank)

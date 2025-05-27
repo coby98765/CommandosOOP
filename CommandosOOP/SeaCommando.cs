@@ -13,13 +13,14 @@ namespace CommandosOOP.Models
 
         public void Swim()
         {
-            Console.WriteLine($"SeaCommando: {Name}, is swimming");
+            Console.WriteLine($"SeaCommando '{CodeName}' is swimming");
         }
 
-        public override void Attack()
+        public override void Attack(Enemy e)
         {
             Status = "Attack";
-            Console.WriteLine($"SeaCommando '{Name}' is Attacking.");
+            e.Attack(7);
+            Console.WriteLine($"SeaCommando '{CodeName}' is Attacking.");
         }
     }
 }
