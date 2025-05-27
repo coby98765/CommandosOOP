@@ -14,7 +14,7 @@ namespace CommandosOOP.Models
         public string Manufacturer { get; set; }
         public int BulletAmount { get; set; }
 
-        Weapon(string name,string manufacturer, int bulletAmount)
+        public Weapon(string name,string manufacturer, int bulletAmount)
         {
             Name = name;
             Manufacturer = manufacturer;
@@ -24,7 +24,7 @@ namespace CommandosOOP.Models
 
         }
 
-        void Shoot()
+        public void Shoot()
         {
             BulletAmount --;
             Console.WriteLine("💥 Shots fired.");

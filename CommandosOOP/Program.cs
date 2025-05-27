@@ -6,9 +6,11 @@ namespace CommandosOOP
 {
     class Program
     {
-        public readonly string[] ToolTypes = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
-        void Main()
+        //public readonly string[] ToolTypes = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
+        static void Main()
         {
+            string[] ToolTypes = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
+
             //init Commando ant test methods
             Commando testCommando = new Commando("test","badass", ToolTypes);
             testCommando.Walk();
@@ -17,7 +19,7 @@ namespace CommandosOOP
 
             //init Weapon ant test methods
             Weapon testWeapon = new Weapon("Hammer", "AAA", 10);
-
+            testWeapon.Shoot();
 
         }
     }
