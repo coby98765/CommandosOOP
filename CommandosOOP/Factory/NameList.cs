@@ -86,5 +86,52 @@ namespace CommandosOOP.Models
         { "type", "sea" }
     }
 };
+        public static List<Dictionary<string, object>> weaponDataList = new List<Dictionary<string, object>>
+            {
+    new Dictionary<string, object>
+    {
+        { "type", "knife" },
+        { "name", "Silent Fang" },
+        { "maker", "Wakandan Forge" },
+        { "strength", 60 },
+        { "health", 80 },
+        { "color", "Silver" },
+        { "weight", 1.3 },
+        { "maxHits", 5 }
+    },
+    new Dictionary<string, object>
+    {
+        { "type", "gun" },
+        { "name", "Blaster" },
+        { "maker", "Stark Industries" },
+        { "strength", 100 },
+        { "health", 100 },
+        { "color", "Red" },
+        { "weight", 4.2 },
+        { "maxBullets", 12 }
+    },
+    new Dictionary<string, object>
+    {
+        { "type", "knife" },
+        { "name", "Shadow Dagger" },
+        { "maker", "Hydra Labs" },
+        { "strength", 45 },
+        { "health", 60 },
+        { "color", "Black" },
+        { "weight", 1.1 },
+        { "maxHits", 4 }
+    },
+    new Dictionary<string, object>
+    {
+        { "type", "gun" },
+        { "name", "Pulse Rifle" },
+        { "maker", "S.H.I.E.L.D." },
+        { "strength", 90 },
+        { "health", 95 },
+        { "color", "Blue" },
+        { "weight", 3.7 },
+        { "maxBullets", 30 }
+    }
+};
         }
     }

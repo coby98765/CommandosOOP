@@ -50,6 +50,7 @@ namespace CommandosOOP.Models
                 {
                 Health = 0;
                 Status = "inactive";
+                Console.WriteLine($"Weapon {Name}, Got hit bad and is now inactive.");
                 return false;
                 }
             else
