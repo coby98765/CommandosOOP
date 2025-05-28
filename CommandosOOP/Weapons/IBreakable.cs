@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using CommandosOOP.Models;
+
+
+namespace CommandosOOP.Models
+    {
+    //Cold Weapon
+    internal interface IBreakable
+        {
+        public int Hits { get; set; }
+        public int Stab();
+        }
+    }
