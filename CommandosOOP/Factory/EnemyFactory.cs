@@ -10,15 +10,15 @@ namespace CommandosOOP.Models
 {
     internal class EnemyFactory
     {
-        //public List<Enemy> Enemies { get; } = new List<Enemy>();
-
-        //public EnemyFactory(string[] EnemiesNameList)
-        //    {
-        //    foreach(string name in EnemiesNameList)
-        //        {
-        //        Enemies.Add(new Enemy(name));
-        //        }
-        //    Console.WriteLine("Factory created all Enemies");
-        //    }
+        static public List<Enemy> Create(string[] EnemiesNameList)
+            {
+            List<Enemy> Enemies = new List<Enemy>;
+            foreach (string name in EnemiesNameList)
+                {
+                Enemies.Add(new Enemy(name));
+                }
+            Console.WriteLine("Factory created all Enemies");
+            return Enemies;
+            }
         }
     }

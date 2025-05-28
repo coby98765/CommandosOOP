@@ -4,7 +4,7 @@
     {
         protected string Name { get; set; }
         protected string CodeName { get; set; }
-        protected string[] Tools = { "Hammer", "Chisel", "rope", "bag", "water bottle" };
+        protected WeaponBase[] Tools ;
         protected string? Status { get; set; }
 
         public Commando(string name, string nickname) 
